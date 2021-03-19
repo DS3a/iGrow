@@ -1,4 +1,4 @@
-#!/home/d33p/dev/Python/i_grow/dashboard/venv/bin/python
+#!/home/d33p/dev/Python/iGrow/dashboard/venv/bin/python
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
