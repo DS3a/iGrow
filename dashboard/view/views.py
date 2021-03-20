@@ -7,7 +7,7 @@ from .models import Value
 prompt = "Hello World"
 
 def home(request):  # is called when a get request is made to localhost
-    return render(request, "index.html")
+    return render(request, "Home.html")
 
 def view_sensor_vals(request):  # is called when a get request is made to localhost
     global prompt
