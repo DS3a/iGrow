@@ -28,9 +28,9 @@ for j in range(2):
         
     for i in range(1,13):
         if j==0:
-            fname="Side_view\\"+str(i)+".png"
+            fname="Side_view/"+str(i)+".PNG"
         else:
-            fname="Top_view\\"+str(i)+".png"
+            fname="Top_view/"+str(i)+".PNG"
             
         # Reading the image
         img = cv2.imread(fname)
@@ -68,7 +68,6 @@ for j in range(2):
         #the images are displayed one by one
         Hori = np.concatenate((resized, green), axis=1) 
         cv2.imshow('image'+str(i),Hori)
-        cv2.waitKey(0)
         
     #The data is plotted and displayed
     plt.plot(lix,liy)
