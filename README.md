@@ -1,4 +1,4 @@
-# Welcome to iGrow
+# Welcome to The iGrow repository
 
 ## Due to the pandemic, our team could not get together to build iGrow. 
 ### So we have done our best to simulate as many aspects of the machine that we could.
@@ -11,7 +11,7 @@ The sensors on iGrow are <talk about sensors, and how we plan on maintaining the
 
 
 the sensor outputs, and other things were simulated using a random generator from numpy in the project called grover.
-You can view the source code, and run it if you want in the folder called grover, 
+You can view the source code, and run it if you want in the folder called grover, using the command <br> <b>python main.py</b><br>
 
 ### make sure, you use the virtual environment /dashboard/venv while using grover, and dashboard
 assume that the grover app is the raspberry pi on iGrow, which collects all the values from the various sensors on the machine,
@@ -21,6 +21,11 @@ dasboard is a django app, which displays all the sensor values, and the ideal co
 you can choose which plant you want to grow, and iGrow will modify the atmospheric conditions inside of itself to ensure that the plant
 is healthy, unfortunately, we couldn't simulate the live telecast from the camera atop iGrow.
 For now, we just pulled the data off of a youtube link, and a kaggle site for the growth monitoring, and the disease detection repectively.
+in order to run dashboard, go to the dashboard folder, and run <b>python manage.py runserver</b> <br>
+you can see the homepage, where all the optimal conditions for each plant are given. 
+That is the page where you can configure which plant you want to grow. If you move on to <b>Real Time Values</b> in the top right corner, 
+you can see the real time values which are being published by grover, 
+as well as the livestream (The youtube video which we used for growth monitoring as of now)
 
 Disease Detection: https://www.kaggle.com/jarvis705/tomato-leaf-disease
 <br>
