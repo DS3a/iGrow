@@ -23,6 +23,7 @@ is healthy, unfortunately, we couldn't simulate the live telecast from the camer
 For now, we just pulled the data off of a youtube link, and a kaggle site for the growth monitoring, and the disease detection repectively.
 
 Disease Detection: https://www.kaggle.com/jarvis705/tomato-leaf-disease
+<br>
 Timelapse of plant growth: https://www.youtube.com/watch?v=-vffKB8ma7Q
 
 The growth detection model is stored in plant_growth_detection. You may view the jupyter notebook, and the docstrings
@@ -38,6 +39,7 @@ you can view the evaluations in disease_detection_tomato/eval_model.ipynb and di
 in order to see the training, checkout disease_detection_tomato/training_model.ipynb. We experimented with many models, 
 some which were too complex and were taking a lot of time to train. infact, they were too large to upload onto github
 you may view those models in the link given below.
+<br>
 Super Complex DL Models: https://drive.google.com/drive/folders/1NauM36ZngfZAMI7ig_diRrw8csSYH3A4?usp=sharing
 We created simpler models to train, and got test accuracy scores upto 97%
 Those models are in the repository, and in the training notebook as well.
