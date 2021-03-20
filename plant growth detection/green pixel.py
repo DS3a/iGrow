@@ -4,6 +4,9 @@ iGrow
 PLANT GROWTH DETECTION
 
 Help: Simply click on the close button of the pop up window to go to the next image or plot
+
+The pictures used for testing is from https://www.youtube.com/watch?v=-vffKB8ma7Q
+
 '''
 
 import cv2
