@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- meta http-equiv="refresh" content="5; URL=http://localhost:8000/view_sensor_vals" -->
+    <meta http-equiv="refresh" content="180; URL=http://localhost:8000/view_sensor_vals">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Sensor Values</title>
@@ -25,11 +25,13 @@
             </center>
         </div>
         <ul class="list-group">
-                <li id="temperature" class="list-group-item list-group-item-info">Temperature : {{ Temperature }}</li>
-                <li id="pressure" class="list-group-item list-group-item-info">Pressure : {{ Pressure }}</li>
-                <li id="humidity" class="list-group-item list-group-item-info">Humidity : {{ Humidity }}</li>
-                <li id="ph" class="list-group-item list-group-item-info">pH : {{ pH }}</li>
-                <li id="intensity" class="list-group-item list-group-item-info">Intensity : {{ Intensity }}</li>
+            {% for item in all %}
+                <li class="list-group-item list-group-item-info">Temperature : {{ item.Temperature }}</li>
+                <li class="list-group-item list-group-item-info">Pressure : {{ item.Pressure }}</li>
+                <li class="list-group-item list-group-item-info">Humidity : {{ item.Humidity }}</li>
+                <li class="list-group-item list-group-item-info">pH : {{ item.pH }}</li>
+                <li class="list-group-item list-group-item-info">Intensity : {{ item.Intensity }}</li>
+            {% endfor %}
         </ul>
     </div>
     <center>
@@ -41,23 +43,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/boots<trap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        var socket = new WebSocket('ws://localhost:8000/ws/some_url/');
-
-        socket.onmessage = function(evemt) {
-            var data = JSON.parse(event.data);
-
-            console.log(data);
-            document.querySelector('temperature').innerText = data.Pressure;
-            document.querySelector('pressure').innerText = data.Pressure;
-            document.querySelector('humidity').innerText = data.Humidity;
-            document.querySelector('ph').innerText = data.pH;
-            document.querySelector('intensity').innerText = data.Intensity;
-        }
-
-    </script>
-
-
 </body>
 </html>
 
