@@ -1,0 +1,5 @@
+disease_detection_tomato/dataset/*
+disease_detection_tomato/cnn_model_less_maxpooling_much_more_params/*
+disease_detection_tomato/cnn_model_less_maxpooling_much_more_params_removed_one_inception_block/*
+disease_detection_tomato/cnn_model_super_complex_cuz_I_dont_have_a_life/*
+

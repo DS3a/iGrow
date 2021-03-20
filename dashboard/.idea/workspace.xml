@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="526f8c5b-ec83-405a-b84c-aae06e868f57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/Home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/Home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/nicepage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
