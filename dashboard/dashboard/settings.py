@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'livereload',
     'view',
+    'channels'
 ]
 
 MIDDLEWARE = [
@@ -71,7 +72,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'dashboard.wsgi.application'
-
+ASGI_APPLICATION = 'dashboard.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases

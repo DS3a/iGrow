@@ -32,7 +32,6 @@ def get_sensor_vals(request):  # runs this when a post req is sent to sensor_val
     value_obj.pH = req["pH"]
     value_obj.Intensity = req["Intensity"]
     value_obj.save()
-    print(value_obj)
     return JsonResponse({"request": str(request)})
 
 
