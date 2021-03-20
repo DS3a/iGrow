@@ -3,7 +3,7 @@
 ## Due to the pandemic, our team could not get together to build iGrow. 
 ### So we have done our best to simulate as many aspects of the machine that we could.
 
-You can view the 3D model, which was built using Fusion 360 in the folder named <insert name of folder>
+You can view the 3D model, which was built using Fusion 360 in the folder named "iGrow Design (fusion 360)"
 If you don't have fusion you can view the model over here : https://a360.co/3f2D6pQ 
 (we recommend using the Fusion 360 app for better performance, and accuracy.
 The web app provided by Fusion 360 doesn't render the model properly)
