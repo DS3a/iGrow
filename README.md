@@ -6,7 +6,7 @@
 You can view the 3D model, which was built using Fusion 360 in the folder named "iGrow Design (fusion 360)"
 If you don't have fusion you can view the model over here : https://a360.co/3f2D6pQ 
 (we recommend using the Fusion 360 app for better performance, and accuracy.
-The web app provided by Fusion 360 doesn't render the model properly)
+The web app provided by Fusion 360 doesn't render the model as good as the desktop version)
 The sensors on iGrow are a BME280 pressure, temperature, and humidity sensor.
 A DS18B20 digital thermal probe, Analog PH Sensor Kit for detecting the pH of growing medium.
 A Halo light with a bunch of adjustable LED tubelights for growth of plant and good lighting conditions for the 
