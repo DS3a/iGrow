@@ -33,7 +33,7 @@ while True:
     payload = grover_tomato.get_values()
     payload["time"] = time.time()
     resp = requests.post("http://127.0.0.1:8000/sensor_vals_input/", json=payload)
-    print("sending request : ", payload)
+    print("sernding request : ", payload)
     resp = requests.get("http://127.0.0.1:8000/atmosphere_regulation/")
     print(resp.json())
     time.sleep(time_to_sleep)

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="526f8c5b-ec83-405a-b84c-aae06e868f57" name="Default Changelist" comment="" />
+    <list default="true" id="526f8c5b-ec83-405a-b84c-aae06e868f57" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sensor_vals.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sensor_vals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../grover/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../grover/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

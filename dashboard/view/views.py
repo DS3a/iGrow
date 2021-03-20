@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from .models import Value
+import json
 
 # Create your views here.
 
@@ -23,12 +24,20 @@ def view_sensor_vals(request):  # is called when a get request is made to localh
 def get_sensor_vals(request):  # runs this when a post req is sent to sensor_vals_input
     global prompt
     prompt = str(request.body)
-    print(request.body)
-    print(Value.__str__(Value))
+    req = json.loads(request.body)
+    value_obj = Value.objects.last()
+    value_obj.Temperature = req["Temperature"]
+    value_obj.Pressure = req["Pressure"]
+    value_obj.Humidity = req["Humidity"]
+    value_obj.pH = req["pH"]
+    value_obj.Intensity = req["Intensity"]
+    value_obj.save()
+    print(value_obj)
     return JsonResponse({"request": str(request)})
 
 
 def send_vals(request):  # runs this when a get req is sent to atmosphere_regulation
-    data = [{"stufsdafjhabegffhsgvrjbghjkf": "stuff 1"},
-            {"modify sensor 1": "too low, increase the value 2"}]
+    data = [{"Humidity": "+2%"},
+            {"pH": "-0.1"},
+            {"Temperature": "+0"}]
     return JsonResponse(data, safe=False)
