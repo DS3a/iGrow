@@ -40,6 +40,6 @@ in order to see the training, checkout disease_detection_tomato/training_model.i
 some which were too complex and were taking a lot of time to train. infact, they were too large to upload onto github
 you may view those models in the link given below.
 <br>
-Super Complex DL Models: https://drive.google.com/drive/folders/1NauM36ZngfZAMI7ig_diRrw8csSYH3A4?usp=sharing
+Super Complex DL Models: https://drive.google.com/drive/folders/1NauM36ZngfZAMI7ig_diRrw8csSYH3A4?usp=sharing <br>
 We created simpler models to train, and got test accuracy scores upto 97%
 Those models are in the repository, and in the training notebook as well.
